@@ -161,7 +161,7 @@ ionic.tap = {
   isTextInput: function(ele) {
     return !!ele &&
            (ele.tagName == 'TEXTAREA' ||
-            ele.contentEditable === 'true' ||
+            ele.isContentEditable ||
             (ele.tagName == 'INPUT' && !(/^(radio|checkbox|range|file|submit|reset|color|image|button)$/i).test(ele.type)));
   },
 
